@@ -7,16 +7,26 @@
 
 import Foundation
 
-struct Message {
-    var userID: Int
+struct ReceivedMessages: Decodable {
+    let data: [Message]
+
+    enum CodingKeys: String, CodingKey {
+        case data = "data"
+      }
+}
+struct Message: Decodable {
+    var userID: String?
     var username: String
-    var avatarURL: URL?
+    var avatarURL: String?
     var text: String
-    
+
     init(testName: String, withTestMessage message: String) {
-        self.userID = 0
+        self.userID = "0"
         self.username = testName
-        self.avatarURL = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/220px-Smiley.svg.png")
+        self.avatarURL =  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/220px-Smiley.svg.png"
         self.text = message
     }
 }
+
+
+

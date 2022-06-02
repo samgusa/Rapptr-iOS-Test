@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,16 +14,23 @@
 		E9414DCE26C45F9200512A71 /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DCD26C45F9200512A71 /* LoginClient.swift */; };
 		E9414DD126C460A600512A71 /* ChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DD026C460A600512A71 /* ChatClient.swift */; };
 		E9414DD626C4617B00512A71 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DD426C4617B00512A71 /* ChatTableViewCell.swift */; };
-		E9414DD726C4617B00512A71 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9414DD526C4617B00512A71 /* ChatTableViewCell.xib */; };
 		E9414DE126C4618900512A71 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DD926C4618900512A71 /* ChatViewController.swift */; };
 		E9414DE226C4618900512A71 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DDA26C4618900512A71 /* AnimationViewController.swift */; };
-		E9414DE326C4618900512A71 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9414DDB26C4618900512A71 /* ChatViewController.xib */; };
-		E9414DE426C4618900512A71 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9414DDC26C4618900512A71 /* MenuViewController.xib */; };
-		E9414DE526C4618900512A71 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9414DDD26C4618900512A71 /* LoginViewController.xib */; };
 		E9414DE626C4618900512A71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DDE26C4618900512A71 /* LoginViewController.swift */; };
-		E9414DE726C4618900512A71 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9414DDF26C4618900512A71 /* AnimationViewController.xib */; };
 		E9414DE826C4618900512A71 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DE026C4618900512A71 /* MenuViewController.swift */; };
 		E9414DEA26C468D700512A71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DE926C468D700512A71 /* SceneDelegate.swift */; };
+		FE52BA14284956D500D097AB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE52BA13284956D500D097AB /* Alamofire */; };
+		FE52BA162849571400D097AB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA152849571400D097AB /* Colors.swift */; };
+		FE52BA182849572F00D097AB /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA172849572F00D097AB /* MenuButton.swift */; };
+		FE52BA1A2849574200D097AB /* MenuButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA192849574200D097AB /* MenuButtonViewModel.swift */; };
+		FE52BA1C2849576000D097AB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA1B2849576000D097AB /* CustomButton.swift */; };
+		FE52BA1E2849577400D097AB /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA1D2849577400D097AB /* PaddingTextField.swift */; };
+		FE52BA202849578800D097AB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA1F2849578800D097AB /* PaddingLabel.swift */; };
+		FE52BA222849579D00D097AB /* DynamicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA212849579D00D097AB /* DynamicTableView.swift */; };
+		FE52BA2A2849587900D097AB /* AnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA292849587900D097AB /* AnimationViewModel.swift */; };
+		FE52BA2C2849588C00D097AB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA2B2849588C00D097AB /* UIImage+Extension.swift */; };
+		FE52BA2E284958A000D097AB /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA2D284958A000D097AB /* Colors+Extension.swift */; };
+		FE52BA30284958B300D097AB /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52BA2F284958B300D097AB /* CGFloat+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,16 +43,22 @@
 		E9414DCD26C45F9200512A71 /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
 		E9414DD026C460A600512A71 /* ChatClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClient.swift; sourceTree = "<group>"; };
 		E9414DD426C4617B00512A71 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
-		E9414DD526C4617B00512A71 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		E9414DD926C4618900512A71 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E9414DDA26C4618900512A71 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
-		E9414DDB26C4618900512A71 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
-		E9414DDC26C4618900512A71 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		E9414DDD26C4618900512A71 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E9414DDE26C4618900512A71 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E9414DDF26C4618900512A71 /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		E9414DE026C4618900512A71 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E9414DE926C468D700512A71 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE52BA152849571400D097AB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FE52BA172849572F00D097AB /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		FE52BA192849574200D097AB /* MenuButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonViewModel.swift; sourceTree = "<group>"; };
+		FE52BA1B2849576000D097AB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FE52BA1D2849577400D097AB /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		FE52BA1F2849578800D097AB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		FE52BA212849579D00D097AB /* DynamicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableView.swift; sourceTree = "<group>"; };
+		FE52BA292849587900D097AB /* AnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewModel.swift; sourceTree = "<group>"; };
+		FE52BA2B2849588C00D097AB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		FE52BA2D284958A000D097AB /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		FE52BA2F284958B300D097AB /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE52BA14284956D500D097AB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,8 @@
 				E9414DCF26C45F9500512A71 /* Clients */,
 				E9414DCC26C45ECD00512A71 /* Models */,
 				E9414DD826C4618900512A71 /* View Controllers */,
+				FE52BA272849584900D097AB /* ViewModel */,
+				FE52BA282849585C00D097AB /* Extension */,
 				E9414DBF26C45CF400512A71 /* Assets.xcassets */,
 				E9414DC126C45CF400512A71 /* LaunchScreen.storyboard */,
 				E9414DC426C45CF400512A71 /* Info.plist */,
@@ -95,6 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				E9414DCA26C45EC900512A71 /* Message.swift */,
+				FE52BA152849571400D097AB /* Colors.swift */,
+				FE52BA172849572F00D097AB /* MenuButton.swift */,
+				FE52BA192849574200D097AB /* MenuButtonViewModel.swift */,
+				FE52BA1B2849576000D097AB /* CustomButton.swift */,
+				FE52BA1D2849577400D097AB /* PaddingTextField.swift */,
+				FE52BA1F2849578800D097AB /* PaddingLabel.swift */,
+				FE52BA212849579D00D097AB /* DynamicTableView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				E9414DD426C4617B00512A71 /* ChatTableViewCell.swift */,
-				E9414DD526C4617B00512A71 /* ChatTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -129,15 +151,29 @@
 			isa = PBXGroup;
 			children = (
 				E9414DDA26C4618900512A71 /* AnimationViewController.swift */,
-				E9414DDF26C4618900512A71 /* AnimationViewController.xib */,
 				E9414DD926C4618900512A71 /* ChatViewController.swift */,
-				E9414DDB26C4618900512A71 /* ChatViewController.xib */,
 				E9414DDE26C4618900512A71 /* LoginViewController.swift */,
-				E9414DDD26C4618900512A71 /* LoginViewController.xib */,
 				E9414DE026C4618900512A71 /* MenuViewController.swift */,
-				E9414DDC26C4618900512A71 /* MenuViewController.xib */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FE52BA272849584900D097AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE52BA292849587900D097AB /* AnimationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE52BA282849585C00D097AB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FE52BA2B2849588C00D097AB /* UIImage+Extension.swift */,
+				FE52BA2D284958A000D097AB /* Colors+Extension.swift */,
+				FE52BA2F284958B300D097AB /* CGFloat+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +192,9 @@
 			dependencies = (
 			);
 			name = "Rapptr iOS Test";
+			packageProductDependencies = (
+				FE52BA13284956D500D097AB /* Alamofire */,
+			);
 			productName = "Rapptr iOS Test";
 			productReference = E9414DB326C45CF300512A71 /* Rapptr iOS Test.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +222,9 @@
 				Base,
 			);
 			mainGroup = E9414DAA26C45CF300512A71;
+			packageReferences = (
+				FE52BA12284956D500D097AB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = E9414DB426C45CF300512A71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,12 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9414DC326C45CF400512A71 /* LaunchScreen.storyboard in Resources */,
-				E9414DE426C4618900512A71 /* MenuViewController.xib in Resources */,
-				E9414DD726C4617B00512A71 /* ChatTableViewCell.xib in Resources */,
-				E9414DE726C4618900512A71 /* AnimationViewController.xib in Resources */,
 				E9414DC026C45CF400512A71 /* Assets.xcassets in Resources */,
-				E9414DE326C4618900512A71 /* ChatViewController.xib in Resources */,
-				E9414DE526C4618900512A71 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,15 +252,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9414DD126C460A600512A71 /* ChatClient.swift in Sources */,
+				FE52BA2A2849587900D097AB /* AnimationViewModel.swift in Sources */,
+				FE52BA162849571400D097AB /* Colors.swift in Sources */,
 				E9414DE126C4618900512A71 /* ChatViewController.swift in Sources */,
 				E9414DCE26C45F9200512A71 /* LoginClient.swift in Sources */,
+				FE52BA30284958B300D097AB /* CGFloat+Extension.swift in Sources */,
+				FE52BA202849578800D097AB /* PaddingLabel.swift in Sources */,
+				FE52BA1E2849577400D097AB /* PaddingTextField.swift in Sources */,
+				FE52BA2E284958A000D097AB /* Colors+Extension.swift in Sources */,
+				FE52BA1C2849576000D097AB /* CustomButton.swift in Sources */,
 				E9414DE826C4618900512A71 /* MenuViewController.swift in Sources */,
 				E9414DCB26C45EC900512A71 /* Message.swift in Sources */,
 				E9414DEA26C468D700512A71 /* SceneDelegate.swift in Sources */,
 				E9414DD626C4617B00512A71 /* ChatTableViewCell.swift in Sources */,
+				FE52BA182849572F00D097AB /* MenuButton.swift in Sources */,
 				E9414DE226C4618900512A71 /* AnimationViewController.swift in Sources */,
 				E9414DB726C45CF300512A71 /* AppDelegate.swift in Sources */,
 				E9414DE626C4618900512A71 /* LoginViewController.swift in Sources */,
+				FE52BA2C2849588C00D097AB /* UIImage+Extension.swift in Sources */,
+				FE52BA222849579D00D097AB /* DynamicTableView.swift in Sources */,
+				FE52BA1A2849574200D097AB /* MenuButtonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Rapptr iOS Test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Rapptr iOS Test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +465,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE52BA12284956D500D097AB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE52BA13284956D500D097AB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE52BA12284956D500D097AB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9414DAB26C45CF300512A71 /* Project object */;
 }

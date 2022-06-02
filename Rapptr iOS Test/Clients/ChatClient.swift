@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /**
  * =========================================================================================
@@ -19,10 +20,35 @@ import Foundation
  */
 
 class ChatClient {
-    
-    var session: URLSession?
-    
+
     func fetchChatData(completion: @escaping ([Message]) -> Void, error errorHandler: @escaping (String?) -> Void) {
-        
+      guard let url = URL(string: "http://dev.rapptrlabs.com/Tests/scripts/chat_log.php") else { return }
+
+      let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        guard let data = data, error == nil else { return }
+
+        do {
+          if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+
+            if let data = json["data"] as? [[String: Any]] {
+              var messages = [Message]()
+              for message in data {
+                var addMessage = Message(testName: message["name"] as? String ?? "", withTestMessage: message["message"] as? String ?? "")
+                addMessage.userID = message["user_id"] as? String
+                addMessage.avatarURL = message["avatar_url"] as? String
+                messages.append(addMessage)
+              }
+              completion(messages)
+            }
+          }
+        } catch {
+          errorHandler(error.localizedDescription)
+        }
+
+      }
+      task.resume()
     }
 }
+
+
+

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 /**
  * =========================================================================================
@@ -24,10 +25,29 @@ import Foundation
 */
 
 class LoginClient {
-    
+
     var session: URLSession?
-    
-    func login(email: String, password: String, completion: @escaping (String) -> Void, error errorHandler: @escaping (String?) -> Void) {
-        
-    }
+
+  func login(email: String, password: String, completion: @escaping (String) -> Void, error errorHandler: @escaping (String?) -> Void) {
+      let login = LoginData(email: email, password: password)
+
+      AF.request("http://dev.rapptrlabs.com/Tests/scripts/login.php",
+                 method: .post,
+                 parameters: login
+          )
+            .validate().response{ response in
+          switch response.result {
+          case .success:
+              completion(response.metrics.map { "\($0.taskInterval.duration)s" } ?? "None")
+          case .failure(let error):
+              errorHandler(error.errorDescription)
+          }
+      }
+  }
+
+}
+
+struct LoginData: Encodable {
+  let email: String
+  let password: String
 }
